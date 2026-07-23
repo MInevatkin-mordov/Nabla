@@ -1,0 +1,60 @@
+.object-page {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+}
+
+.back-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.object-card {
+    margin: 40px auto;
+    max-width: 1200px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    background: rgba(15,20,35,.85);
+    border-radius: 20px;
+    padding: 40px;
+
+    color: white;
+}
+
+.object-info {
+    flex: 1;
+}
+
+.object-info h1 {
+    font-size: 52px;
+    margin-bottom: 25px;
+}
+
+.object-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.object-info td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.object-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.object-image img {
+    width: 450px;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 0 30px black;
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "ngc": "NGC 1499",
+    "name": "California Nebula",
+    "type": "Emission Nebula",
+    "constellation": "Per",
+    "ra": "04h 03m 18.0s",
+    "dec": "+36° 25′ 18.0″",
+    "magnitude": 6.0,
+    "distance_pc": 398.6,
+    "angular_size": "150.0′ × 30.0′",
+    "image": "/images/ngc/NGC1499.jpg"
+  },
+  {
+    "ngc": "NGC 2024",
+    "name": "Flame Nebula",
+    "type": "Emission Nebula",
+    "constellation": "Ori",
+    "ra": "05h 41m 54.0s",
+    "dec": "-01° 51′ 00.0″",
+    "magnitude": 10.0,
+    "distance_pc": 413.9,
+    "angular_size": "30.0′ × 30.0′",
+    "image": "/images/ngc/NGC2024.jpg"
+  },
+  {
+    "ngc": "NGC 281",
+    "name": "Pacman Nebula",
+    "type": "Emission Nebula",
+    "constellation": "Cas",
+    "ra": "00h 52m 59.3s",
+    "dec": "+56° 37′ 19.0″",
+    "magnitude": 7.4,
+    "distance_pc": 2912.7,
+    "angular_size": "35.0′",
+    "image": "/images/ngc/NGC281.jpg"
+  },
+  {
+    "ngc": "IC 1805",
+    "name": "Heart Nebula",
+    "type": "Emission Nebula",
+    "constellation": "Cas",
+    "ra": "02h 33m 22.0s",
+    "dec": "+61° 26′ 36.0″",
+    "magnitude": 6.5,
+    "distance_pc": 2299.5,
+    "angular_size": "150.0′ × 150.0′",
+    "image": "/images/ngc/IC1805.jpg"
+  },
+  {
+    "ngc": "IC 1848",
+    "name": "Soul Nebula",
+    "type": "Emission Nebula",
+    "constellation": "Cas",
+    "ra": "02h 55m 24.0s",
+    "dec": "+60° 24′ 36.0″",
+    "magnitude": 6.5,
+    "distance_pc": 2299.5,
+    "angular_size": "150.0′ × 75.0′",
+    "image": "/images/ngc/IC1848.jpg"
+  }
+]

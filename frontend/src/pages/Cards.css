@@ -1,0 +1,96 @@
+/* ===========================
+   BOTTOM PANEL
+=========================== */
+
+.cards-bottom-panel{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.bottom-button{
+
+    flex:1;
+
+    padding:16px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    background:rgba(255,255,255,.06);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.bottom-button:hover{
+
+    transform:translateY(-3px);
+
+    background:rgba(90,150,255,.15);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+@media(max-width:700px){
+
+.cards-bottom-panel{
+
+flex-direction:column;
+
+}
+
+}
+/* ===========================
+   START BUTTON (main CTA)
+=========================== */
+
+.cards-start-button{
+
+    display:block;
+
+    width:100%;
+
+    padding:22px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:linear-gradient(135deg,#4d89ff,#66c0ff);
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    box-shadow:0 15px 35px rgba(29,101,215,.35);
+
+}
+
+.cards-start-button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 20px 45px rgba(70,140,255,.45);
+
+}

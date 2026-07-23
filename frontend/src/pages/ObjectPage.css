@@ -1,0 +1,113 @@
+.object-page {
+    min-height: 100vh;
+    padding: 40px;
+
+    background-image: url("/backgrounds/card_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.back-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.back-link:hover {
+    color: #6eb8ff;
+}
+
+.object-card {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+    background: rgba(10, 18, 35, 0.78);
+    backdrop-filter: blur(10px);
+
+    border-radius: 24px;
+
+    padding: 45px;
+
+    box-shadow: 0 0 35px rgba(0,0,0,.45);
+}
+
+.object-info {
+    flex: 1;
+    color: white;
+}
+
+.object-info h1 {
+    font-size: 54px;
+    margin-bottom: 30px;
+}
+
+.object-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.object-info td {
+    padding: 14px 8px;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.object-info td:first-child {
+    font-weight: bold;
+    width: 280px;
+    color: #8dc8ff;
+}
+
+.object-image {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.object-photo {
+    width: 100%;
+    max-width: 650px;
+
+    border-radius: 20px;
+
+    object-fit: cover;
+
+    box-shadow: 0 0 30px rgba(0,0,0,.55);
+
+    transition: .3s;
+}
+
+.object-photo:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 1000px) {
+
+.object-card{
+    flex-direction:column;
+}
+
+.object-info h1{
+    text-align:center;
+}
+
+.object-photo{
+    max-width:100%;
+}
+
+}

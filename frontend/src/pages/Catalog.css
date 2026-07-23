@@ -1,0 +1,623 @@
+/* ===========================================================
+   NABLA Astronomy
+   Catalog.css
+   Часть 1
+=========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body,
+#root{
+    width:100%;
+    min-height:100%;
+    overflow-x:hidden;
+    font-family:"Segoe UI",sans-serif;
+    color:white;
+}
+
+/* ===========================
+   Основная разметка
+=========================== */
+
+.catalog-layout{
+
+    display:grid;
+
+    grid-template-columns:230px 1fr 250px;
+
+    width:100%;
+
+    min-height:100vh;
+
+    background-image:url("/space2.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+
+}
+
+/* ===========================
+   Левая панель
+=========================== */
+
+.left-panel{
+
+    position:sticky;
+
+    top:0;
+
+    height:100vh;
+
+    padding:24px;
+
+    background:rgba(8,14,30,.45);
+
+    backdrop-filter:blur(18px);
+
+    border-right:1px solid rgba(255,255,255,.08);
+
+}
+
+.logo{
+
+    margin-bottom:35px;
+
+}
+
+.logo h1{
+
+    color:#8ad8ff;
+
+    font-size:34px;
+
+    letter-spacing:4px;
+
+    text-align:center;
+
+    text-shadow:0 0 20px rgba(90,180,255,.4);
+
+}
+
+.logo p{
+
+    color:#d8ebff;
+
+    font-size:13px;
+
+    text-align:center;
+
+    margin-top:6px;
+
+}
+
+/* ===========================
+   Кнопки меню
+=========================== */
+
+.side-button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:12px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.05);
+
+    color:#dcefff;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    text-align:left;
+
+    transition:.25s;
+
+}
+
+.side-button:hover{
+
+    background:rgba(120,180,255,.22);
+
+    transform:translateX(4px);
+
+}
+
+.side-button.active{
+
+    background:linear-gradient(90deg,#257cff,#56d8ff);
+
+    color:white;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   Центральная область
+=========================== */
+
+.catalog-page{
+
+    padding:30px;
+
+    overflow-y:auto;
+
+}
+
+.catalog-page h1{
+
+    color:#dff4ff;
+
+    font-size:42px;
+
+    text-align:center;
+
+    margin-bottom:12px;
+
+    text-shadow:
+
+        0 0 12px rgba(100,180,255,.45);
+
+}
+
+.catalog-page p{
+
+    text-align:center;
+
+    color:#b6d8f4;
+
+    margin-bottom:28px;
+
+}
+
+/* ===========================
+   Поиск
+=========================== */
+
+.search-input{
+
+    width:100%;
+
+    padding:16px 20px;
+
+    margin-bottom:35px;
+
+    border:none;
+
+    border-radius:16px;
+
+    outline:none;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(14px);
+
+    color:white;
+
+    font-size:17px;
+
+}
+
+.search-input::placeholder{
+
+    color:#b8cfe5;
+
+}
+
+/* ===========================
+   Сетка карточек
+=========================== */
+
+.catalog-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,220px);
+
+    justify-content:center;
+
+    gap:28px;
+
+}
+
+/* ===========================
+   Ссылки
+=========================== */
+
+.catalog-link{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ===========================
+   Карточка
+=========================== */
+
+.catalog-card{
+
+    width:220px;
+
+    height:245px;
+
+    background:rgba(18,28,50,.60);
+
+    backdrop-filter:blur(16px);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.10);
+
+    transition:
+
+        transform .25s,
+
+        box-shadow .25s,
+
+        border-color .25s;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.catalog-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(120,190,255,.45);
+
+    box-shadow:
+
+        0 0 35px rgba(70,150,255,.28);
+
+}
+
+/* ===========================
+   Фото
+=========================== */
+
+.image-wrapper{
+
+    width:100%;
+
+    height:170px;
+
+    background:rgba(255,255,255,.03);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+.image-wrapper img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* ===========================================================
+   Catalog.css
+   Часть 2
+=========================================================== */
+
+/* ===========================
+   Подпись карточки
+=========================== */
+
+.catalog-title{
+
+    height:75px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#8fdcff;
+
+    letter-spacing:2px;
+
+    text-shadow:
+        0 0 12px rgba(120,190,255,.45);
+
+}
+
+/* ===========================
+   Заглушка изображения
+=========================== */
+
+.image-wrapper img[src=""],
+.image-wrapper img:not([src]){
+
+    object-fit:contain;
+
+    padding:25px;
+
+    opacity:.45;
+
+}
+
+.image-wrapper::after{
+
+    content:"";
+
+    position:absolute;
+
+}
+
+/* ===========================
+   Правая панель
+=========================== */
+
+.right-panel{
+
+    position:sticky;
+
+    top:0;
+
+    height:100vh;
+
+    padding:24px;
+
+    background:rgba(8,14,30,.45);
+
+    backdrop-filter:blur(18px);
+
+    border-left:1px solid rgba(255,255,255,.08);
+
+}
+
+.right-panel h2{
+
+    text-align:center;
+
+    color:#dff4ff;
+
+    font-size:28px;
+
+    margin-bottom:24px;
+
+    text-shadow:
+        0 0 10px rgba(120,190,255,.35);
+
+}
+
+/* ===========================
+   Фильтры
+=========================== */
+
+.filter-box{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.filter-box label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.05);
+
+    cursor:not-allowed;
+
+    color:#dcefff;
+
+    transition:.25s;
+
+}
+
+.filter-box label:hover{
+
+    background:rgba(120,180,255,.18);
+
+}
+
+.filter-box input{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+/* ===========================
+   Скроллбар
+=========================== */
+
+.catalog-page::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+.catalog-page::-webkit-scrollbar-track{
+
+    background:transparent;
+
+}
+
+.catalog-page::-webkit-scrollbar-thumb{
+
+    background:rgba(120,180,255,.35);
+
+    border-radius:20px;
+
+}
+
+.catalog-page::-webkit-scrollbar-thumb:hover{
+
+    background:rgba(120,180,255,.6);
+
+}
+
+/* ===========================
+   Адаптация
+=========================== */
+
+@media (max-width:1400px){
+
+    .catalog-grid{
+
+        grid-template-columns:repeat(2,220px);
+
+    }
+
+}
+
+@media (max-width:1100px){
+
+    .catalog-layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .left-panel,
+    .right-panel{
+
+        position:relative;
+
+        height:auto;
+
+        border:none;
+
+    }
+
+    .catalog-grid{
+
+        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    }
+
+}
+
+@media (max-width:700px){
+
+    .catalog-page{
+
+        padding:18px;
+
+    }
+
+    .catalog-page h1{
+
+        font-size:30px;
+
+    }
+
+    .search-input{
+
+        font-size:15px;
+
+    }
+
+    .catalog-grid{
+
+        grid-template-columns:1fr;
+
+        justify-items:center;
+
+    }
+
+    .catalog-card{
+
+        width:240px;
+
+    }
+
+}
+
+/* ===========================
+   Плавные анимации
+=========================== */
+
+.catalog-card,
+.side-button,
+.filter-box label,
+.search-input{
+
+    transition:all .25s ease;
+
+}
+
+.search-input:focus{
+
+    box-shadow:
+        0 0 20px rgba(120,190,255,.35);
+
+    border:1px solid rgba(120,190,255,.35);
+
+}
+
+.catalog-card:hover .catalog-title{
+
+    color:#b9eeff;
+
+    text-shadow:
+        0 0 18px rgba(120,190,255,.75);
+
+}
+
+.image-wrapper img{
+
+    transition:transform .35s ease;
+
+}
+
+.catalog-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   Конец файла
+=========================== */
