@@ -2,6 +2,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/nabla13/',
+  base: '/Nabla/',
   plugins: [react()],
 })
